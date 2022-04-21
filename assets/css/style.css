@@ -1,29 +1,123 @@
 @charset "utf-8";
-
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("../img/bg01.png");
+  background-repeat: repeat;
+}
 nav {
   display: flex;
   flex-direction: column;
 }
-ul {
+ul, ol {
   list-style: none;
 }
 a {
   text-decoration: none;
-  color: 'blak';
 }
-.wrapper {
+/* img {
   width: 100%;
-  max-width: 960px;
+  height: auto;
+} */
+.container {
+  width: 100%;
+  height: 100vh;
+  padding: 3rem;
   margin: 0 auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
-.sns-container {
-  padding: 2rem 1rem;
+.nav-wrapper {
+  /* width: 10rem; */
+  display: flex;
+  flex-direction: column;
+  padding-right: 2.5rem;
+}
+.nav-brand img {
+  width: 100%;
+  height: auto;
+}
+.nav-list {
+  margin: 1.5rem 0;
+}
+.nav-item {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 0;
+}
+.nav-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+.nav-content-en {
+  padding-top: 0.25rem;
+}
+.kv-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  /* max-height: 60rem; */
+}
+.kv-video {
+  width: 100%;
+  height: auto;
+  max-height: 50rem;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+.kv-copy {
+  position: absolute;
+  width: 10rem;
+  height: 17rem;
+  top: -1rem;
+  right: -1rem;
+  z-index: 5;
+  /* background-color: '#fff' !important; */
+  background-image: url('../img/bg02.png');
+  background-repeat: repeat;
+  border-radius: 0 2rem 0 2rem;
+  display: flex;
+  justify-content: center;
+  /* padding: 3rem 2.5rem; */
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 3.5rem; 
+  padding-right: 2.5rem; 
+}
+.kv-copy img {
+  width: 100%;
+  height: auto;
+}
+.sns-wrapper {
+  padding: 1rem 1rem; 
   display: flex;
   justify-content: end;
 }
 .sns-account {
   display: flex;
   justify-content: space-evenly;
+  padding-left: 0.5rem;
+}
+.sns-account-item {
+  width: 0;
+  height: 0;
+  padding: 1rem;
+}
+.circle {
+  width: 12rem;
+  height: 12rem;
+  background-image: url('../img/bg01.png');
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0rem;
+  left: -2rem;
+  z-index: 5;
+}
+.circle img {
+  position: absolute;
+  bottom: 20%;
+  left: 20%;
+  border-radius: 50%;
 }
