@@ -15,15 +15,18 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
+    <!-- hamburger menu -->
+    <div class="menu-wrapper-sp">
+      <button class="menu-btn" type="button" id="menu-btn">
+        <span class="menu-text01" id="menu-text01"><img src="assets/img/button_text01.svg" alt=""></span>
+        <span class="menu-text02" id="menu-text02"><img src="assets/img/button_text02.svg" alt=""></span>
+      </button>
+    </div>
     <header>
       <div class="container">
+        <!-- nav-brand -->
         <nav class="nav-wrapper">
-          <!-- nav-brand -->
-          <h1 class="nav-brand"><a href="#"><img src="assets/img/logo.svg" alt="天然食堂かふぅロゴ"></a></h1>
-          <!-- hamburger button -->
-          <!-- <button class="menu-btn" type="button" id="menu-btn" hidden>
-          </button> -->
-          <!-- hamburger-menu-item -->
+          <h1><a href="#"><img class="nav-brand" src="assets/img/logo.svg" alt="天然食堂かふぅロゴ"></a></h1>
           <ul class="nav-list">
             <li class="nav-item">
               <a href="#" class="nav-content">
@@ -63,12 +66,66 @@
             </li>
           </ul>
         </nav>
+        <div class="sns-wrapper-sp">
+          <img src="assets/img/oficial_sns_sp.svg" alt="">
+        </div>
+        <!-- humberger menu item -->
+        <div class="overlay-sp">
+          <nav class="nav-wrapper-sp">
+            <ul class="nav-list-sp">
+              <li class="nav-item-sp">
+                <a href="#" class="nav-content-sp">
+                  <span class="nav-content-en-sp"><img src="assets/img/nav_text02.svg" alt="Top page"></span>
+                  <span"><img src="assets/img/nav_text01.svg" alt="トップページ"></span> 
+                </a>
+              </li>
+              <li class="nav-item-sp">
+                <a href="#" class="nav-content-sp">
+                  <span class="nav-content-en-sp"><img src="assets/img/nav_text04.svg" alt="Concept"></span>
+                  <span"><img src="assets/img/nav_text03.svg" alt="ごあいさつ"></span> 
+                </a>
+              </li>
+              <li class="nav-item-sp">
+                <a href="#" class="nav-content-sp">
+                  <span class="nav-content-en-sp"><img src="assets/img/nav_text06.svg" alt="How to cook"></span>
+                  <span"><img src="assets/img/nav_text05.svg" alt="養生ごはんのひみつ"></span> 
+                </a>
+              </li>
+              <li class="nav-item-sp">
+                <a href="#" class="nav-content-sp">
+                  <span class="nav-content-en-sp"><img src="assets/img/nav_text08.svg" alt="Cafuu menu"></span>
+                  <span"><img src="assets/img/nav_text07.svg" alt="かふうのメニュー"></span> 
+                </a>
+              </li>
+              <li class="nav-item-sp">
+                <a href="#" class="nav-content-sp">
+                  <span class="nav-content-en-sp"><img src="assets/img/nav_text10.svg" alt="Photo gallery"></span>
+                  <span"><img src="assets/img/nav_text09.svg" alt="お店のご紹介"></span> 
+                </a>
+              </li>
+              <li class="nav-item-sp">
+                <a href="#" class="nav-content-sp">
+                  <span class="nav-content-en-sp"><img src="assets/img/nav_text12.svg" alt="Access"></span>
+                  <span"><img src="assets/img/nav_text11.svg" alt="アクセス情報"></span> 
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
         <!-- kv -->
         <div class="kv-wrapper">
           <video class="kv-video" src="assets/movie/kv_movie.caa5c7a.mp4" loop autoplay muted playsinline></video>
           <div class="kv-copy">
-            <img src="assets/img/kv/kv_copy02.svg" alt="食べることは生きること">
-            <img src="assets/img/kv/kv_copy01.png" alt="天然食堂かふぅ">
+            <picture>
+              <source media="(min-width: 1025px)" srcset="assets/img/kv/kv_copy02_pc.svg">
+              <source media="(min-width: 0px)" srcset="assets/img/kv/kv_copy02_sp.svg">
+              <img src="assets/img/kv/kv_copy02_pc.svg" alt="食べることは生きること">
+            </picture>
+            <picture>
+              <source media="(min-width: 1025px)" srcset="assets/img/kv/kv_copy01_pc.png">
+              <source media="(min-width: 0px)" srcset="assets/img/kv/kv_copy01_sp.svg">
+              <img src="assets/img/kv/kv_copy01_pc.png" alt="天然食堂かふぅ">
+            </picture>
           </div>
           <div class="circle">
             <img src="assets/img/recommandation_drink.jpg" alt="おすすめのドリンク">
@@ -78,7 +135,6 @@
               <li><a class="sns-account-item" href="#"><img src="assets/img/sns/sns_twitter.svg" alt="Twitter"></a></li>
               <li><a class="sns-account-item" href="#"><img src="assets/img/sns/sns_instagram.svg" alt="Instagram"></a></li>
               <li><a class="sns-account-item" href="#"><img src="assets/img/sns/sns_facebook.svg" alt="Facebook"></a></li>
-    
             </ul>
           </div>
         </div>
@@ -86,12 +142,22 @@
       <!-- notice -->
       <div class="notice-container">
         <div class="notice-wrapper">
-          <div class="notice-title">
-            <a href="#">重要なお知らせ</a>
-          </div>
-          <div>2022.1.26</div>
-          <p><a href="#">新型コロナウイルスに関する当店の営業状況と感染症予防対策実施について</a></p>
-          <p><i class="fa-solid fa-magnifying-glass"></i></p>
+          <a href="#">
+            <div class="notice-title">
+              <p>
+                重要なお知らせ
+              </p>
+            </div>
+            <div class="notice-date">
+              <p>2022.1.26</p>
+            </div>
+            <div class="notice-content">
+              <p>新型コロナウイルスに関する当店の営業状況と感染症予防対策実施について</p>
+            </div>
+            <p>
+              <i class="fa-solid fa-magnifying-glass" ></i>
+            </p>
+          </a>
         </div>
       </div>
     </header>
@@ -120,21 +186,46 @@
             </div>
           </div>
           <div class="sec-picture">
-            <img src="assets/img/concept/concept01_md.webp" alt="">
+            <img class="sec-picture-right" src="assets/img/concept/concept01_md.webp" alt="">
+          </div>
+        </div>
+      </section>
+      <!-- --- Start how to cook section --- -->
+      <section class="sec-left"> 
+        <div class="sec-container-left">
+          <div class="sec-content">
+            <!-- <h2 class="sec-main-copy-left">
+              <img src="assets/img/cook/cook01.png" alt="">
+            </h2>
+            <div class="sec-sub-copy">
+              <img class="sec-sub-copy-left-ja" src="assets/img/cook/cook02.svg" alt="ごあいさつ">
+              <img class="sec-sub-copy-left-en" src="assets/img/cook/cook03_md.svg" alt="Concept">
+            </div> -->
+            <div class="sec-content-body">
+              <p>
+                養生ごはんのひみつ
+                無農薬・無添加の旬の食材にこだわり、全メニューに薬膳の考え方を取り入れています。麹や新鮮な野菜・果物からの酵素のパワー、発酵の力を利用する醤油麹、塩麹、酵素シロップもすべて手作り。健康と美味しさの両立を叶える、料理の秘訣がここにあります。
+                詳しく見る
+              </p>
+            </div>
+            <div class="show-detail">
+              <a href="#">
+                <div class="show-button"></div>
+                <p class="show-text">詳しくみる</p>
+              </a>
+            </div>
+            <div class="sec-picure">
+              <img class="sec-picture-cook" src="assets/img/cook/cook02_md.webp" alt="">
+            </div>
+          </div>
+          <div class="sec-picture">
+            <img class="sec-picture-left" src="assets/img/cook/cook01_md.webp" alt="">
           </div>
         </div>
       </section>
       <div style="margin: 10rem 0; text-align: center;">
         マージン用テキスト
       </div>
-      <!-- --- Start concept section --- -->
-      <section class="sec_left">
-        HOW TO COOK 
-        <!-- content -->
-        養生ごはんのひみつ
-        無農薬・無添加の旬の食材にこだわり、全メニューに薬膳の考え方を取り入れています。麹や新鮮な野菜・果物からの酵素のパワー、発酵の力を利用する醤油麹、塩麹、酵素シロップもすべて手作り。健康と美味しさの両立を叶える、料理の秘訣がここにあります。
-        詳しく見る
-      </section>
       <section>
         CAFUU MENU 
         <!-- content -->
