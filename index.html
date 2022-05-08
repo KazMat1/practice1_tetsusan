@@ -6,13 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>【公式】大阪北堀江の薬膳・養生ごはん 天然食堂かふぅ</title>
     <meta name="description" content="">
-    <!-- Start font awesome6 -->
+    <!-- font awesome6 -->
     <script src="https://kit.fontawesome.com/874daca7d7.js" crossorigin="anonymous"></script>
-    <!-- End font awesome6 -->
     <!-- css -->
     <link rel="stylesheet" href="assets/css/reset.css">
-    <!-- <link rel="stylesheet" href="assets/css/normalize.css"> -->
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
   </head>
   <body>
     <!-- hamburger menu -->
@@ -199,7 +198,11 @@
             </h2>
             <div class="sec-sub-copy">
               <img class="sec-sub-copy-left-ja" src="assets/img/cook/cook02.svg" alt="ごあいさつ">
-              <img class="sec-sub-copy-left-en" src="assets/img/cook/cook03_md.svg" alt="Concept">
+              <picture>
+                <source media="(min-width: 1025px)" srcset="assets/img/cook/cook03_md.svg">
+                <source media="(min-width: 0px)" srcset="assets/img/cook/cook03_sp.svg">
+                <img class="sec-sub-copy-left-en" src="assets/img/cook/cook03_md.svg" alt="Concept">
+              </picture>
             </div>
             <div class="sec-content-body-left">
               <p>
@@ -223,30 +226,118 @@
         </div>
       </section>
       <!-- --- Start cafuu menu section --- -->
-      <section class="sec-right"> 
+      <section class="sec-right-menu"> 
         <div class="sec-container-right">
           <div class="sec-content">
             <h2 class="sec-main-copy">
               <img src="assets/img/slider/cafuumenu_text01.webp" alt="Cafuu's menu">
             </h2>
             <div class="sec-sub-copy">
-              <img class="sec-sub-copy-ja" src="assets/img/slider/cafuumenu_text03.svg" alt="かふぅのメニュー">
-              <img class="sec-sub-copy-en" src="assets/img/slider/cafuumenu_text02.svg" alt="Cafuu menu">
+              <img class="sec-sub-copy-menu-ja" src="assets/img/slider/cafuumenu_text03.svg" alt="かふぅのメニュー">
+              <img class="sec-sub-copy-menu-en" src="assets/img/slider/cafuumenu_text02.svg" alt="Cafuu menu">
             </div>
             <div class="sec-content-body">
-              <p>
-                2011年、北堀江にオープンした心と体が喜ぶ養生ごはんのお店、天然食堂かふぅ。「体に良いのに、何を食べても美味しい！」そんなお声が聞きたくて、今日も腕を振るいます。おひとり様はもちろん、大切な方と是非お越しください。
-              </p>
+              <div class="text-box">
+                <p class="text-vertical">
+                  一品一品、丁寧に旨みと栄養を引き出しました。心と体を整え、プチ不調や季節のお悩みを和らげます。お酒も多数ご用意。ランチに、夜ごはん・宴会にどうぞ。
+                </p>
+              </div>
             </div>
-            <div class="show-detail">
+            <div class="show-detail-menu">
               <a href="#">
-                <div class="show-button"></div>
-                <p class="show-text">詳しくみる</p>
+                <div class="show-button-menu"></div>
+                <p class="show-text">すべて見る</p>
               </a>
             </div>
           </div>
-          <div class="sec-picture">
+          <!-- <div class="sec-picture">
             <img class="sec-picture-right" src="assets/img/concept/concept01_md.webp" alt="">
+          </div> -->
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slider -->
+              <div class="swiper-slide">
+                <article>
+                  <img class="slider-img" src="assets/img/slider/slider_1.jpg" alt="">
+                  <p class="slider-category">
+                    <img src="assets/img/slider/slider_text01.svg" alt="">
+                  </p>
+                  <h3 class="slider-title">
+                    薬膳鍋コース
+                  </h3>
+                  <p class="slider-body">
+                    金・土限定。3日前までに要予約。高麗人参・黄耆・棗・枸杞子と新鮮な朝引き鶏を煮込んだスープ。朝引きの手羽先・つくね・鶏むね肉のしゃぶしゃぶと季節の野菜を15～18種類。締めはプチプチ食感の玄米雑炊。薬膳茶付き。
+                  </p>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article>
+                  <img class="slider-img" src="assets/img/slider/slider_2.jpg" alt="">
+                  <p class="slider-category">
+                    <img src="assets/img/slider/slider_text02.svg" alt="">
+                  </p>
+                  <h3 class="slider-title">
+                    養生ごはんセット
+                  </h3>
+                  <p class="slider-body">
+                    野菜・肉・魚・漢方食材を使った薬膳小鉢8品、玄米ご飯、重ね煮野菜の味噌汁、自家製漬物の日替わりセット。玄米ご飯、お味噌汁、お漬物を500円以内のドリンクに変更可能。
+                  </p>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article>
+                  <img class="slider-img" src="assets/img/slider/slider_3.jpg" alt="">
+                  <p class="slider-category">
+                    <img src="assets/img/slider/slider_text03.svg" alt="">
+                  </p>
+                  <h3 class="slider-title">
+                    鶏の薬膳唐揚セット
+                  </h3>
+                  <p class="slider-body">
+                    かふぅ特製薬膳だれに付け込んだ鶏ももの唐揚、玄米ご飯、重ね煮野菜の味噌汁、自家製漬物のセット。玄米ご飯、お味噌汁、お漬物を500円以内のドリンクに変更可能。
+                  </p>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article>
+                  <img class="slider-img" src="assets/img/slider/slider_4.jpg" alt="">
+                  <p class="slider-category">
+                    <img src="assets/img/slider/slider_text04.svg" alt="">
+                  </p>
+                  <h3 class="slider-title">
+                    自家製酵素ソーダ
+                  </h3>
+                  <p class="slider-body">
+                    砂糖と果物のみで作った自家製の果物酵素をソーダで割ってすっきりと（水割りもできます！）。時期によって果物の種類が変わります。
+                  </p>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article>
+                  <img class="slider-img" src="assets/img/slider/slider_5.jpg" alt="">
+                  <p class="slider-category">
+                    <img src="assets/img/slider/slider_text05.svg" alt="">
+                  </p>
+                  <h3 class="slider-title">
+                    日替わりかふぅ弁当
+                  </h3>
+                  <p class="slider-body">
+                    そうざい3品、おかず（肉や魚介を使ったメイン）、玄米ご飯、自家製漬物の入ったお弁当。丁寧に作られたかふぅの味を家庭でもお召し上がり下さい。
+                  </p>
+                </article>
+              </div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-nav">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
           </div>
         </div>
       </section>
@@ -281,48 +372,28 @@
           </div>
         </div>
       </section>
+      <section>
+        <div class="cover-wrapper">
+          <img class="cover-bg-img" src="assets/img/sns/sns_img01.webp" alt="">
+        </div>
+        <div class="sec-container">
+          <div class="sec-content-center">
+            <!-- <h2 class="sec-main-copy">
+            </h2> -->
+            <img class="sec-sub-copy-center-ja" src="assets/img/sns/sns_text02.svg" alt="お店のご紹介">
+            <img class="sec-sub-copy-center-en" src="assets/img/sns/sns_text03_pc.svg" alt="Photo gallery">
+            <div class="sec-content-body-center">
+              <p>
+                日替わりの養生ごはんセットのメインおかずの内容や、最新の営業日・時間帯を毎日配信しています。珍しいお酒の入荷お知らせも。
+                是非お気軽にフォローしてくださいね。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
       <div style="margin: 10rem 0; text-align: center;">
         マージン用テキスト
       </div>
-
-        CAFUU MENU 
-        <!-- content -->
-        かふぅのメニュー 一品一品、丁寧に旨みと栄養を引き出しました。
-        心と体を整え、プチ不調や季節のお悩みを和らげます。
-        お酒も多数ご用意。ランチに、夜ごはん・宴会にどうぞ。
-
-        <!-- slider -->
-        ランチ 鶏の薬膳唐揚セット
-        かふぅ特製薬膳だれに付け込んだ鶏ももの唐揚、玄米ご飯、重ね煮野菜の味噌汁、自家製漬物のセット。玄米ご飯、お味噌汁、お漬物を500円以内のドリンクに変更可能。
-        ランチ 自家製酵素ソーダ
-        砂糖と果物のみで作った自家製の果物酵素をソーダで割ってすっきりと（水割りもできます！）。時期によって果物の種類が変わります。
-        テイクアウト 日替わりかふぅ弁当
-        そうざい3品、おかず（肉や魚介を使ったメイン）、玄米ご飯、自家製漬物の入ったお弁当。丁寧に作られたかふぅの味を家庭でもお召し上がり下さい。
-        夜ごはん 薬膳鍋コース
-        金・土限定。3日前までに要予約。高麗人参・黄耆・棗・枸杞子と新鮮な朝引き鶏を煮込んだスープ。朝引きの手羽先・つくね・鶏むね肉のしゃぶしゃぶと季節の野菜を15～18種類。締めはプチプチ食感の玄米雑炊。薬膳茶付き。
-        終日提供 養生ごはんセット
-        野菜・肉・魚・漢方食材を使った薬膳小鉢8品、玄米ご飯、重ね煮野菜の味噌汁、自家製漬物の日替わりセット。玄米ご飯、お味噌汁、お漬物を500円以内のドリンクに変更可能。
-        ランチ 鶏の薬膳唐揚セット
-        かふぅ特製薬膳だれに付け込んだ鶏ももの唐揚、玄米ご飯、重ね煮野菜の味噌汁、自家製漬物のセット。玄米ご飯、お味噌汁、お漬物を500円以内のドリンクに変更可能。
-        ランチ 自家製酵素ソーダ
-        砂糖と果物のみで作った自家製の果物酵素をソーダで割ってすっきりと（水割りもできます！）。時期によって果物の種類が変わります。
-        テイクアウト 日替わりかふぅ弁当
-        そうざい3品、おかず（肉や魚介を使ったメイン）、玄米ご飯、自家製漬物の入ったお弁当。丁寧に作られたかふぅの味を家庭でもお召し上がり下さい。
-        夜ごはん 薬膳鍋コース
-        金・土限定。3日前までに要予約。高麗人参・黄耆・棗・枸杞子と新鮮な朝引き鶏を煮込んだスープ。朝引きの手羽先・つくね・鶏むね肉のしゃぶしゃぶと季節の野菜を15～18種類。締めはプチプチ食感の玄米雑炊。薬膳茶付き。
-        終日提供 養生ごはんセット
-        野菜・肉・魚・漢方食材を使った薬膳小鉢8品、玄米ご飯、重ね煮野菜の味噌汁、自家製漬物の日替わりセット。玄米ご飯、お味噌汁、お漬物を500円以内のドリンクに変更可能。
-        ランチ 鶏の薬膳唐揚セット
-        かふぅ特製薬膳だれに付け込んだ鶏ももの唐揚、玄米ご飯、重ね煮野菜の味噌汁、自家製漬物のセット。玄米ご飯、お味噌汁、お漬物を500円以内のドリンクに変更可能。
-        1 / 5 すべて見る
-      <section>
-        OFFICIAL SNS
-        <!-- content -->
-        今日の日替わり配信中
-        日替わりの養生ごはんセットのメインおかずの内容や、最新の営業日・時間帯を毎日配信しています。珍しいお酒の入荷お知らせも。
-        是非お気軽にフォローしてくださいね。
-        <!-- sns -->
-        TWITTER INSTAGRAM FACEBOOK
       </section>
       <section>
         ACCESS INFO 
@@ -354,6 +425,7 @@
       </div>
     </footer>
     <!-- js -->
+    <script type="text/javascript" src="assets/js/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="assets/js/script.js"></script>
   </body>
 </html>

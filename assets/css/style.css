@@ -19,10 +19,6 @@ a {
   text-decoration: none;
   color : inherit;
 }
-/* img {
-  width: 100%;
-  height: auto;
-} */
 /* --- Start hamburger menu --- */
 .nav-list-sp {
   display: none;
@@ -32,16 +28,11 @@ a {
 }
 @media screen and (max-width: 1024px) {
   .menu-wrapper-sp {
-    /* background-color: #573001; */
     position: sticky;
     top: 150px;
-    /* left: 50%; */
-    /* top: calc(50% / 5);
-    right: calc(50% / 6); */
     width: 100%;
     height: auto;
     z-index: 100;
-    /* padding: 1rem; */
   }
   .menu-btn {
     display: flex;
@@ -50,11 +41,7 @@ a {
     width: 88px;
     position: absolute;
     top: 10px;
-    /* top: calc(100% / 5); */
     right: 100px;
-    /* right: calc(50% / 8); */
-    /* background: none;
-    border: none; */
     border-radius: 50%;
     background-image: url("../img/button_img01.png");
     background-repeat: repeat;
@@ -63,12 +50,9 @@ a {
   }
   .menu-btn::after,.menu-btn::before {
     position: absolute;
-    /* top: calc(50% - 1px); */
     top: calc(50% - 2px);
     left: 28px;
-    /* left: calc(50% - 18%); */
     content: '';
-    /* width: 32px; */
     width: calc(100% / 2.75);
     height: 4px;
     display: block;
@@ -110,7 +94,6 @@ a {
     position: absolute;
     top: 100%;
     right: 30%;
-    /* right: calc(100% / 3); */
     transform: translateY(8px);
     transition: transform .8s;
   }
@@ -159,8 +142,6 @@ a {
   .menu-wrapper-sp {
     position: sticky;
     top: 30px;
-    /* left: 50%; */
-    /* top: calc(50% / 5); */
     width: 100%;
     height: auto;
     z-index: 100;
@@ -173,8 +154,6 @@ a {
     position: absolute;
     top: 30px;
     right: 30px;
-    /* background: none;
-    border: none; */
     border-radius: 50%;
     background-image: url("../img/button_img01.png");
     background-repeat: repeat;
@@ -196,7 +175,6 @@ a {
     visibility: visible;
     position: absolute;
     top: 100%;
-    /* right: 15%; */
     right: calc(100% / 7);
     transform: translateY(0px);
     transition: transform .8s;
@@ -205,7 +183,6 @@ a {
     visibility: hidden;
     position: absolute;
     top: 100%;
-    /* right: 13%; */
     right: calc(50% / 4);
     transform: translateY(8px);
     transition: transform .8s;
@@ -228,8 +205,6 @@ header {
   width: 15%;
   height: auto;
   max-height: 60rem;
-  /* width: 100%; */
-  /* height: auto; */
   display: flex;
   flex-direction: column;
   padding-right: 2.5rem;
@@ -257,9 +232,6 @@ header {
   align-items: center;
   padding: 0.5rem;
 }
-/* .nav-content-ja {
-  padding-bottom: 0.25rem;
-} */
 .kv-wrapper {
   width: 85%;
   height: 100%;
@@ -285,7 +257,6 @@ header {
   border-radius: 0 2rem 0 2rem;
   display: flex;
   justify-content: center;
-  /* padding: 3rem 2.5rem 3rem 3.5rem; */
   padding: 5% 3% 5% 4%;
 }
 .kv-copy img {
@@ -319,8 +290,6 @@ header {
   overflow: hidden;
 }
 .circle img {
-  /* width: 100%;
-  height: auto; */
   position: absolute;
   bottom: 20%;
   left: 20%;
@@ -334,11 +303,7 @@ header {
 .sns-wrapper-sp {
   display: none;
 }
-/* .menu-wrapper-sp {
-  display: none;
-} */
 @media screen and (max-width: 1024px) {
-  /* 1024pxまでの幅の場合に適用される */
   .container {
     padding: 2.5rem 4rem;
     margin: 0 auto 2rem auto;
@@ -363,8 +328,6 @@ header {
     display: flex;
   }
   .kv-video {
-    /* width: auto;
-    height: 200%; */
     border-radius: 2rem 0 0 2rem;
   }
   .kv-copy {
@@ -389,7 +352,6 @@ header {
   }
   .sns-wrapper-sp {
     width: 40%;
-    /* height: auto; */
     padding: 1rem 0;
     display: flex;
     justify-content: end;
@@ -401,30 +363,6 @@ header {
   .circle {
     display: none;
   }
-  /* .circle {
-    width: 22rem;
-    height: 22rem;
-    background-image: url('../img/bg01.png');
-    border-radius: 50%;
-    position: absolute;
-    bottom: -20rem;
-    left: 5rem;
-    z-index: 5;
-    overflow: hidden;
-    display: block;
-  }
-  .circle img {
-    width: 60%;
-    height: auto;
-    position: absolute;
-    bottom: 20%;
-    left: 20%;
-    border-radius: 50%;
-    transition-duration: 0.3s;
-  }
-  .circle img:hover {
-    transform: none;
-  } */
 }
 @media screen and (max-width: 768px) {
   .container {
@@ -465,8 +403,6 @@ header {
   border-radius: 5rem;
   padding: 1rem 0;
   margin-right: 1rem;
-  /* z-index: 5; */
-  /* display: inline-block; */
 }
 .notice-date {
   width: 10%;
@@ -552,11 +488,11 @@ header {
 }
 /* --- Start section --- */
 .sec-right {
-  margin: 5rem 0;
+  margin: 7rem 0;
   padding-left: 20%;
 }
 .sec-left {
-  margin: 5rem 0;
+  margin: 7rem 0;
   padding-right: 20%;
 }
 .sec-container-right{
@@ -605,8 +541,6 @@ header {
   width: 100%;
   height: auto;
   position: relative;
-  /* display: flex;
-  align-items: start; */
 }
 .sec-sub-copy-ja {
   width: 7%;
@@ -667,10 +601,8 @@ header {
   width: 100%;
   height: auto;
   border-radius: 1rem;
-  /* text-align: end; */
 }
 .sec-picture-gallery {
-  /* width: 28%; */
   margin: 0 2rem 0 0;
 }
 .sec-picture-right {
@@ -701,11 +633,6 @@ header {
   position: relative;
   margin: 2rem 7rem 0 0;
 }
-/* set the enlarge animation */
-/* .show-detail a:hover {
-  transition: 0.3s;
-  transform: scale(1.3); 
-} */
 .show-button {
   background-image: url("../img/bg03.png");
   width: 4.5rem;
@@ -722,11 +649,32 @@ header {
   .sec-right {
     padding-left: 10%;
   }
+  .sec-left {
+    margin: 5rem 0;
+    padding-right: 10%;
+  }
   .sec-container-right{
+    flex-direction: column;
+  }
+  .sec-container-left{
+    width: 80%;
+    height: auto;
+    display: flex;
     flex-direction: column;
   }
   .sec-content {
     width: 100%;
+  }
+  .sec-content-left {
+    width: 100%;
+    height: auto;
+    margin-left: 8rem;
+    position: relative;
+  }
+  .sec-main-copy-left {
+    position: absolute;
+    top: 0;
+    right: -30%;
   }
   .sec-sub-copy-ja {
     width: 6%;
@@ -737,14 +685,34 @@ header {
     top: -4rem;
     left: 12rem;
   }
+  .sec-sub-copy-left-ja {
+    width: 20%;
+    height: auto;
+    position: absolute;
+    top: 2rem;
+  }
+  .sec-sub-copy-left-en {
+    width: 70%;
+    height: auto;
+    position: absolute;
+    top: 4rem;
+  }
   .sec-content-body {
     width: 55%;
     padding: 0 5%;
     margin-left: 25%;
   }
+  .sec-content-body-left {
+    display: none;
+  }
   .sec-content-body p{
     font-size: 200%;
     line-height: 3rem;
+  }
+  .sec-content-body-left p{
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+    letter-spacing: 0.1rem;
   }
   .sec-picture {
     width: 100%;
@@ -754,8 +722,26 @@ header {
     height: auto;
     border-radius: 2rem 0 0 2rem;
   }
+  .sec-sub-picture {
+    padding-left: 15rem;
+    position: absolute;
+    bottom: -45rem;
+    right: -10rem;
+  }
+  .sec-picture-cook {
+    width: 80%;
+    height: auto;
+    border-radius: 2rem;
+  }
+  .sec-picture-left {
+    width: 100%;
+    border-radius: 0 2rem 2rem 0;
+  }
   .show-detail {
     margin: 5% 0 5% 30%;
+  }
+  .show-detail-left {
+    display: none;
   }
   .show-text {
     left: 9%;
@@ -788,20 +774,162 @@ header {
     font-size: 70%;
   }
 }
+/* Start Cafuu menu */
+.sec-right-menu {
+  margin: 7rem 0;
+  padding-left: 20%;
+}
+.sec-right-menu::after {
+  content: '';
+  width: 100px;
+  height: auto;
+  background-image: url('../img/bg04.png');
+  background-size: 15rem 15rem;
+  border-radius: 2rem;
+}
+.text-box {
+  height: 65%;
+  position: absolute;
+  left: 0;
+}
+.text-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+.show-detail-menu {
+  display: flex;
+  justify-content: start;
+  position: relative;
+  margin: 25rem 7rem 0 0;
+}
+.show-button-menu {
+  background-image: url("../img/bg03.png");
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+}
+.show-text {
+  position: absolute;
+  top: 45%;
+  left: 18%;
+  font-size: 80%;
+}
+.sec-sub-copy-menu-ja {
+  width: 10%;
+  height: auto;
+  position: absolute;
+  top: 3rem;
+  left: 7rem
+}
+.sec-sub-copy-menu-en {
+  width: 3%;
+  height: auto;
+  position: absolute;
+  top: 3rem;
+  left: 11rem
+}
+.swiper {
+  width: 100%;
+}
+.swiper-slide {
+  width: 30rem !important;
+  margin-right: 3rem;
+}
+article {
+  width: 100%;
+  height: auto;
+  padding: 0 1rem;
+  position: relative;
+}
+.slider-img {
+  width: 100%;
+  height: auto;
+  border-radius: 1.5rem;
+}
+.slider-category {
+  width: 25%;
+  height: auto;
+  margin: 0 auto;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3rem;
+  position: absolute;
+  top: 59%;
+  left: 38%;
+}
+.slider-category img {
+  padding: 1rem 0;
+  width: 50%;
+  height: auto;
+}
+.slider-title {
+  margin: 4rem 0 2rem 0;
+  font-weight: 500;
+  text-align: center;
+}
+.slider-body {
+  padding: 0 2rem;
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+  letter-spacing: 0.1rem;
+}
+/* Start SNS section */
+.sec-container {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.sec-content-center {
+  width: 100%;
+  height: auto;
+  padding: 0 20rem;
+  position: relative;
+}
+.sec-sub-copy-center-ja {
+  width: 8%;
+  height: auto;
+  position: absolute;
+  top: 2rem;
+}
+.sec-sub-copy-center-en {
+  width: 30%;
+  height: auto;
+  position: absolute;
+  top: 4rem;
+}
+.sec-content-body-center {
+  width: 60%;
+  height: auto;
+  margin-top: 10rem;
+}
+.sec-content-body-center p{
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+  letter-spacing: 0.1rem;
+}
+.cover-wrapper {
+  width: 100vw;
+  height: auto;
+  background-image: url('../img/sns/sns_img01.webp');
+}
+.cover-bg-img {
+  width: 100%;
+  height: auto;
+}
+.sns-list {
+
+}
 /* --- Start foter nav --- */
 .footer-nav {
   width: 10rem;
   height: 5rem;
-  /* transform: rotate(90deg); */
-
-  /* display: flex;
-  justify-content: start;
-  text-align: start; */
 }
 .footer-nav a p::before {
   content: "◀︎";
-
-  /* padding-right: 1rem; */
 }
 .footer-nav a {
   display: flex;
@@ -822,42 +950,3 @@ footer {
   font-size: 0.5rem;
   letter-spacing: 0.1rem;
 }
-
-/* @media screen and (min-width:480px) { 
-  　for iPhone Landscape　(iPhone 横)　
-
-}
-@media screen and (min-width:768px) and ( max-width:1024px) {
-  　for iPad 　
-
-}
-@media screen and (min-width:1024px) {
-  　for PC　
-
-} */
-/* body {
-  1024px以上の幅の場合に適用される
-}
-@media screen and (max-width: 1024px) {
-  1024pxまでの幅の場合に適用される
-  body {
-      
-  }
-}
-@media screen and (max-width: 768px) {
-  768pxまでの幅の場合に適用される
-  body {
-      
-  }
-}@media screen and (max-width: 480px) {
-  480pxまでの幅の場合に適用される
-  body {
-      
-  }
-}
-@media screen and (max-width: 320px) {
-  320pxまでの幅の場合に適用される
-  body {
-      
-  }
-} */
