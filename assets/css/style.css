@@ -302,7 +302,11 @@ header {
 .sns-wrapper-sp {
   display: none;
 }
+/* .menu-wrapper-sp {
+  display: none;
+} */
 @media screen and (max-width: 1024px) {
+  /* 1024pxまでの幅の場合に適用される */
   .container {
     padding: 2.5rem 4rem;
     margin: 0 auto 2rem auto;
@@ -351,6 +355,7 @@ header {
   }
   .sns-wrapper-sp {
     width: 40%;
+    /* height: auto; */
     padding: 1rem 0;
     display: flex;
     justify-content: end;
@@ -362,6 +367,30 @@ header {
   .circle {
     display: none;
   }
+  /* .circle {
+    width: 22rem;
+    height: 22rem;
+    background-image: url('../img/bg01.png');
+    border-radius: 50%;
+    position: absolute;
+    bottom: -20rem;
+    left: 5rem;
+    z-index: 5;
+    overflow: hidden;
+    display: block;
+  }
+  .circle img {
+    width: 60%;
+    height: auto;
+    position: absolute;
+    bottom: 20%;
+    left: 20%;
+    border-radius: 50%;
+    transition-duration: 0.3s;
+  }
+  .circle img:hover {
+    transform: none;
+  } */
 }
 @media screen and (max-width: 768px) {
   .container {
@@ -394,13 +423,13 @@ header {
   font-size: 90%;
 }
 .notice-title {
-  width: 15%;
+  width: 13%;
   height: auto;
   text-align: center;
   color: #fff;
   background-color: #f77567;
   border-radius: 5rem;
-  padding: 1rem 0;
+  padding: .7rem 0;
   margin-right: 1rem;
 }
 .notice-date {
@@ -553,7 +582,7 @@ header {
   height: auto;
   position: absolute;
   top: -2.3rem;
-  left: 5rem
+  left: 5rem;
 }
 .sec-sub-copy-left-ja {
   width: 20%;
@@ -571,7 +600,7 @@ header {
   width: 65%;
   height: auto;
   margin-top: 3rem;
-  margin-left: 7rem ;
+  margin-left: 7rem;
 }
 .sec-content-body-left {
   width: 100%;
@@ -632,6 +661,11 @@ header {
   position: relative;
   margin: 2rem 7rem 0 0;
 }
+/* set the enlarge animation */
+/* .show-detail a:hover {
+  transition: 0.3s;
+  transform: scale(1.3); 
+} */
 .show-button {
   background-image: url("../img/bg03.png");
   width: 4.5rem;
@@ -731,6 +765,7 @@ header {
     width: 80%;
     height: auto;
     border-radius: 2rem;
+    /* text-align: end; */
   }
   .sec-picture-left {
     width: 100%;
@@ -807,10 +842,16 @@ header {
   height: 4.5rem;
   border-radius: 50%;
 }
+.show-text-menu {
+  position: absolute;
+  top: 45%;
+  left: 23%;
+  font-size: 80%;
+}
 .show-text {
   position: absolute;
   top: 45%;
-  left: 18%;
+  left: 15%;
   font-size: 80%;
 }
 .sec-sub-copy-menu-ja {
@@ -874,8 +915,9 @@ article {
   line-height: 1.3rem;
   letter-spacing: 0.1rem;
 }
-/* Start SNS section */
-.sec-center {
+/* --- Start SNS --- */
+.sec-cover {
+  margin: 7rem 0;
   position: relative;
 }
 .sec-container {
@@ -886,7 +928,7 @@ article {
   flex-direction: column;
   position: relative;
 }
-.sec-content-center {
+.sec-content-cover {
   width: 73%;
   height: auto;
   padding: 0 10rem 0 20rem;
@@ -895,25 +937,25 @@ article {
   bottom: -1rem;
   border-radius: 0 1.5rem 0 0;
 }
-.sec-sub-copy-center-ja {
+.sec-sub-copy-cover-ja {
   width: 8%;
   height: auto;
   position: absolute;
   top: 6rem;
 }
-.sec-sub-copy-center-en {
+.sec-sub-copy-cover-en {
   width: 35%;
   height: auto;
   position: absolute;
   top: 8rem;
 }
-.sec-content-body-center {
+.sec-content-body-cover {
   width: 60%;
   height: auto;
   margin-top: 13rem;
   padding-bottom: 2rem;
 }
-.sec-content-body-center p{
+.sec-content-body-cover p{
   font-size: 0.8rem;
   line-height: 1.3rem;
   letter-spacing: 0.1rem;
@@ -1034,18 +1076,113 @@ article {
   margin: auto;
   transform: scale(.6);
 }
-/* --- Start foter nav --- */
-.footer-nav {
+/* --- Start access info ---  */
+.sec-center {
+  margin: 7rem 0;
+  padding: 0 20%;
+}
+.sec-content-center {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.sec-sub-copy-center-ja {
+  width: 4%;
+  height: auto;
+  position: absolute;
+  right: 2%;
+}
+.sec-sub-copy-center-en {
+  width: 1%;
+  height: auto;
+  position: absolute;
+  right: -2%;
+}
+.sec-content-body-center {
+  width: 100%;
+  height: auto;
+}
+.sec-content-body-center iframe { border-radius: 2rem; }
+.btn-access {
+  width: 200px;
+  height: auto;
+  padding: 1.5rem;
+  position: absolute;
+  bottom: 55%;
+  right: 0;
+  background-image: url('../img/img01.png');
+  border-radius: .5rem;
+}
+.btn-access a {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.sec-content-info {
+  margin: 4rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.access-info,tr { width: 100%; }
+.access-info th,
+.access-info td {
+  font-size: 80%;
+  text-align: start;
+  padding-bottom: 1rem;
+}
+.access-info th {
+  font-weight: bold;
+  width: 8%;
+}
+.access-info td {
+  font-weight: lighter;
+  width: 42%;
+  line-height: 200%;
+}
+@media screen and (max-width: 767px) {
+  .access-info,
+  .access-info tr,
+  .access-info td,
+  .access-info th { display: block; }
+  .access-info th { width: auto; }
+}
+.notice-container-center {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.notice-container-center .notice-title,
+.notice-container-center .notice-date,
+.notice-container-center .notice-content {
+  font-size: 85%;
+}
+.notice-container-center .notice-wrapper i {
+  position: absolute;
+  top: 45%;
+  right: 5%;
+  font-size: 85%;
+}
+/* --- Start scroll-nav --- */
+.scroll-nav {
   width: 10rem;
   height: 5rem;
+  transform: rotate(90deg);
+  position: fixed;
+  right: 1%;
+  bottom: 8%;
+  z-index: 10;
 }
-.footer-nav a p::before {
-  content: "◀︎";
-}
-.footer-nav a {
+.scroll-nav p {
   display: flex;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
+}
+.scroll-nav a p::before {
+  content: "◀︎";
+  margin-right: .6rem;
+  font-size: 50%;
 }
 /* --- Start footer --- */
 footer {

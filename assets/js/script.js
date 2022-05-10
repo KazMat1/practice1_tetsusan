@@ -10,6 +10,17 @@ menuBtn.addEventListener('click', () => {
   menuText01.classList.toggle('is-clicked');
   menuText02.classList.toggle('is-clicked');
 })
+// Start scroll nav
+const scrollNav = document.getElementById('scroll-nav');
+window.addEventListener('scroll', () => {
+  let y = window.pageYOffset;
+  let offsetY = 400 < y;
+  if (offsetY) {
+    scrollNav.hidden = false;
+  } else {
+    scrollNav.hidden = true;
+  }
+});
 // Start swiper 
 const swiper = new Swiper('.swiper', {
   // Optional parameters
