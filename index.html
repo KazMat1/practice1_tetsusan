@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- TDK -->
     <title>【公式】大阪北堀江の薬膳・養生ごはん 天然食堂かふぅ</title>
     <meta name="description" content="旬の有機野菜・肉・魚にこだわり、醤油麹・塩麹など無添加の自家製調味料で仕上げた、栄養と旨みたっぷりのオーガニック・自然食をお楽しみください。ランチやカフェタイム、夜ごはんや宴会に。おひとり様はもちろん、大切な方と是非お越しください。">
+    <meta name="keyword" content="a, b, c">
     <!-- OGP -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="【公式】大阪北堀江の薬膳・養生ごはん食堂" />     
@@ -19,9 +21,9 @@
     <!-- css -->
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.css">
   </head>
-  <body>
+  <body id="top">
     <!-- hamburger menu -->
     <div class="menu-wrapper-sp">
       <button class="menu-btn" type="button" id="menu-btn">
@@ -237,7 +239,7 @@
       <section class="sec-right-menu"> 
         <div class="sec-container-right">
           <div class="sec-content">
-            <h2 class="sec-main-copy">
+            <h2 class="sec-main-copy-menu">
               <img src="assets/img/slider/cafuumenu_text01.webp" alt="Cafuu's menu">
             </h2>
             <div class="sec-sub-copy">
@@ -247,7 +249,9 @@
             <div class="sec-content-body">
               <div class="text-box">
                 <p class="text-vertical">
-                  一品一品、丁寧に旨みと栄養を引き出しました。心と体を整え、プチ不調や季節のお悩みを和らげます。お酒も多数ご用意。ランチに、夜ごはん・宴会にどうぞ。
+                  一品一品、丁寧に旨みと栄養を引き出しました。</br>
+                  心と体を整え、プチ不調や季節のお悩みを和らげます。</br>
+                  お酒も多数ご用意。ランチに、夜ごはん・宴会にどうぞ。
                 </p>
               </div>
             </div>
@@ -260,7 +264,11 @@
           </div>
           <!-- Slider main container -->
           <div class="swiper">
-            <!-- Additional required wrapper -->
+            <div class="swiper-nav">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"></div>
+            </div>
             <div class="swiper-wrapper">
               <!-- Slider -->
               <div class="swiper-slide">
@@ -334,14 +342,6 @@
                 </article>
               </div>
             </div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-nav">
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-            </div>
-
-            <!-- If we need scrollbar -->
             <!-- <div class="swiper-scrollbar"></div> -->
           </div>
         </div>
@@ -501,7 +501,7 @@
         </div>
       </section>
       <div class="scroll-nav" id="scroll-nav" hidden>
-        <a href="">
+        <a href="#top">
           <p>
             <img class="top-arrow" src="assets/img/footer_nav_text01_sp.svg" alt="">
           </p>
@@ -518,3 +518,7 @@
     <script type="text/javascript" src="assets/js/script.js"></script>
   </body>
 </html>
+<!-- ーーーーーーーーーーーーーーーーーーー -->
+<body >
+
+</body>
