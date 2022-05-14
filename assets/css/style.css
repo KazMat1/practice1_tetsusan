@@ -48,7 +48,8 @@ a {
     cursor: pointer;
     z-index: 20;
   }
-  .menu-btn::after,.menu-btn::before {
+  .menu-btn::after,
+  .menu-btn::before {
     position: absolute;
     top: calc(50% - 2px);
     left: 28px;
@@ -58,16 +59,13 @@ a {
     display: block;
     background: #fff;
     border-radius: 0.5rem;
+    transition: transform .8s;
   }
   .menu-btn::before{  
     transform: translateY(-4px);
   }
   .menu-btn::after {
     transform: translateY(4px)
-  }
-  .menu-btn::after,
-  .menu-btn::before {
-    transition: transform .8s;
   }
   .menu-btn.is-active::before {
     transform: rotate(135deg);
@@ -118,7 +116,7 @@ a {
     visibility: visible;
     opacity: 1;
     pointer-events: auto;
-    transition: all .8s;
+    /* transition: all .8s; */
   }
   .nav-wrapper-sp {
     padding: 12rem 8rem;
@@ -676,10 +674,11 @@ header {
   height: 4.5rem;
   border-radius: 50%;
 }
-.show-text {
+.show-text,
+.show-text-cook {
   position: absolute;
   top: 45%;
-  left: 18%;
+  left: 19%;
   font-size: 80%;
 }
 @media screen and (max-width: 1024px) {
@@ -711,7 +710,16 @@ header {
   .sec-main-copy-left {
     position: absolute;
     top: 0;
-    right: -30%;
+    right: -10%;
+    width: 18%;
+    height: auto;
+  }
+  .sec-main-copy-left img {
+    width: 100%;
+    height: auto;
+  }
+  .sec-main-copy-menu {
+    display: none;
   }
   .sec-sub-copy-ja {
     width: 6%;
@@ -727,6 +735,7 @@ header {
     height: auto;
     position: absolute;
     top: 2rem;
+    left: .5rem;
   }
   .sec-sub-copy-left-en {
     width: 70%;
@@ -735,20 +744,22 @@ header {
     top: 4rem;
   }
   .sec-content-body {
-    width: 55%;
+    width: 70%;
     padding: 0 5%;
     margin-left: 25%;
   }
   .sec-content-body-left {
-    display: none;
+    position: absolute;
+    top: 70rem;
+    margin-top: 0;
   }
   .sec-content-body p{
     font-size: 200%;
     line-height: 3rem;
   }
   .sec-content-body-left p{
-    font-size: 0.8rem;
-    line-height: 1.3rem;
+    font-size: 200%;
+    line-height: 3rem;
     letter-spacing: 0.1rem;
   }
   .sec-picture {
@@ -760,32 +771,47 @@ header {
     border-radius: 2rem 0 0 2rem;
   }
   .sec-sub-picture {
-    padding-left: 15rem;
+    padding-left: 20%;
     position: absolute;
-    bottom: -45rem;
-    right: -10rem;
+    bottom: -65rem;
+    right: -5rem;
   }
   .sec-picture-cook {
-    width: 80%;
+    width: 100%;
     height: auto;
     border-radius: 2rem;
-    /* text-align: end; */
   }
   .sec-picture-left {
     width: 100%;
     border-radius: 0 2rem 2rem 0;
+    margin-top: 50%;
   }
   .show-detail {
     margin: 5% 0 5% 30%;
   }
   .show-detail-left {
-    display: none;
+    width: 50%;
+    display: block;
+    position: absolute;
+    top: 90rem;
   }
   .show-text {
     left: 9%;
   }
+  .show-text-cook {
+    position: absolute;
+    top: 45%;
+    left: 16%;
+    font-size: 80%;
+  }
+  /* .sec-right-menu .sec-content {
+    display: none;
+  } */
 }
 @media screen and (max-width: 768px) {
+  .sec-content-left {
+    margin-left: 6rem;
+  }
   .sec-content-body {
     width: 70%;
   }
@@ -799,9 +825,35 @@ header {
     top: -1rem;
     left: 4.5rem;
   }
+  .sec-sub-copy-left-ja {
+    width: 30%;
+    height: auto;
+    left: 0;
+  }
+  .sec-sub-copy-left-en {
+    top: 5rem; 
+    left: -.5rem;
+  }
+  .sec-content-body-left {
+    position: absolute;
+    top: 60rem;
+    margin-top: 0;
+  }
   .sec-content-body p{
     font-size: 80%;
     line-height: 1.5rem;
+  }
+  .sec-content-body-left p{
+    font-size: 80%;
+    line-height: 1.5rem;
+  }
+  .sec-sub-picture {
+    top: 35rem;
+    bottom: 0;
+    right: -4rem;
+  }
+  .show-detail-left {
+    top: 70rem;
   }
   .show-button {
     width: 3rem;
@@ -811,6 +863,45 @@ header {
     left: 15%;
     font-size: 70%;
   }
+}
+@media screen and (max-width: 480px) {
+  /* 480pxまでの幅の場合に適応される */
+  .sec-sub-copy-left-en {
+    left: -1.5rem;
+    top: 4rem;
+  }
+  .sec-sub-copy-left-ja {
+    left: -1rem;
+  }
+  .sec-content-body-left {
+    top: 40rem;
+  }
+  .show-detail-left {
+    top: 50rem;
+  }
+  .sec-picture-left {
+    margin-top: 60%;
+  }
+  .sec-sub-picture {
+    top: 22rem;
+    left: 10rem;
+    right: -1rem;
+    padding-left: 5%;
+  }
+  .sec-picture-cook {
+    border-radius: 1.5rem;
+  }
+  /* 画面ずれ */
+  .sec-sub-copy-cover-en, 
+  .sns-list-wrapper {
+    display: none;
+  }
+}
+@media screen and (max-width: 320px) {
+/* 320pxまでの幅の場合に適応される */
+    body {
+        
+    }
 }
 /* Start Cafuu menu */
 .sec-right-menu {
@@ -849,13 +940,7 @@ header {
 .show-text-menu {
   position: absolute;
   top: 45%;
-  left: 23%;
-  font-size: 80%;
-}
-.show-text {
-  position: absolute;
-  top: 45%;
-  left: 15%;
+  left: 30%;
   font-size: 80%;
 }
 .sec-sub-copy-menu-ja {
@@ -927,6 +1012,11 @@ article {
   font-size: 0.8rem;
   line-height: 1.3rem;
   letter-spacing: 0.1rem;
+}
+@media screen and (max-width: 1024px) {
+  .sec-right-menu {
+    margin: 50rem 0 5rem 0;
+  }
 }
 /* --- Start SNS --- */
 .sec-cover {
@@ -1158,8 +1248,12 @@ article {
   .access-info,
   .access-info tr,
   .access-info td,
-  .access-info th { display: block; }
-  .access-info th { width: auto; }
+  .access-info th { 
+    display: block; 
+  }
+  .access-info th { 
+    width: auto; 
+  }
 }
 .notice-container-center {
   width: 100%;
@@ -1196,6 +1290,11 @@ article {
   content: "◀︎";
   margin-right: .6rem;
   font-size: 50%;
+}
+@media screen and (max-width: 1024px) {
+  .scroll-nav {
+    display: none;
+  }
 }
 /* --- Start footer --- */
 footer {

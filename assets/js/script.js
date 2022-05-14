@@ -13,9 +13,9 @@ menuBtn.addEventListener('click', () => {
 // Start scroll nav
 const scrollNav = document.getElementById('scroll-nav');
 window.addEventListener('scroll', () => {
-  let y = window.pageYOffset;
-  let offsetY = 400 < y;
-  if (offsetY) {
+  let offsetY = window.pageYOffset;
+  let isShown = 400 < offsetY;
+  if (isShown) {
     scrollNav.hidden = false;
   } else {
     scrollNav.hidden = true;
@@ -23,24 +23,18 @@ window.addEventListener('scroll', () => {
 });
 // Start swiper 
 const swiper = new Swiper('.swiper', {
-  // Optional parameters
+  // Optional properties
   slidesPerView: 3,
-  // spaceBetween: 15,
   direction: 'horizontal',
   loop: true,
-
-  // If we need pagination
   pagination: {
     el: '.swiper-pagination',
     type: 'fraction',
   },
-
-  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-
   // And if we need scrollbar
   // scrollbar: {
   //   el: '.swiper-scrollbar',
