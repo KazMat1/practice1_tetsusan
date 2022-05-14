@@ -1,27 +1,5 @@
 'use strict';
-// Start hamburger menu
-const menuBtn = document.getElementById('menu-btn');
-const overlay = document.querySelector('.overlay-sp');
-const menuText01 = document.getElementById('menu-text01');
-const menuText02 = document.getElementById('menu-text02');
-menuBtn.addEventListener('click', () => {
-  menuBtn.classList.toggle('is-active');
-  overlay.classList.toggle('is-open');
-  menuText01.classList.toggle('is-clicked');
-  menuText02.classList.toggle('is-clicked');
-})
-// Start scroll nav
-const scrollNav = document.getElementById('scroll-nav');
-window.addEventListener('scroll', () => {
-  let offsetY = window.pageYOffset;
-  let isShown = 400 < offsetY;
-  if (isShown) {
-    scrollNav.hidden = false;
-  } else {
-    scrollNav.hidden = true;
-  }
-});
-// Start swiper 
+// Activate swiper.js
 const swiper = new Swiper('.swiper', {
   // Optional properties
   slidesPerView: 3,
@@ -40,3 +18,31 @@ const swiper = new Swiper('.swiper', {
   //   el: '.swiper-scrollbar',
   // },
 });
+
+// Toggle hamburger menu
+const menuBtn = document.getElementById('menu-btn');
+const overlay = document.querySelector('.overlay-sp');
+const menuText01 = document.getElementById('menu-text01');
+const menuText02 = document.getElementById('menu-text02');
+function toggleMenu() {
+  menuBtn.classList.toggle('is-active');
+  overlay.classList.toggle('is-open');
+  menuText01.classList.toggle('is-clicked');
+  menuText02.classList.toggle('is-clicked');
+}
+menuBtn.addEventListener('click', toggleMenu);
+
+// Show up scroll-nav 
+const scrollNav = document.getElementById('scroll-nav');
+function showUp() {
+  let offsetY = window.pageYOffset;
+  let isShown = 400 < offsetY;
+  if (isShown) {
+    scrollNav.classList.add('is-shown');
+  } else {
+    scrollNav.classList.remove('is-shown');
+  }
+}
+window.addEventListener('scroll', showUp);
+window.addEventListener('load', showUp);
+// イベント発火時に影響しない要素はfunctionの外に出すべき？
