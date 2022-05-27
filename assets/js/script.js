@@ -33,8 +33,8 @@ function toggleMenu() {
 menuBtn.addEventListener('click', toggleMenu);
 
 // Show up scroll-nav 
-const scrollNav = document.getElementById('scroll-nav');
 function showUp() {
+  const scrollNav = document.getElementById('scroll-nav');
   let offsetY = window.pageYOffset;
   let isShown = 400 < offsetY;
   if (isShown) {
@@ -45,4 +45,4 @@ function showUp() {
 }
 window.addEventListener('scroll', showUp);
 window.addEventListener('load', showUp);
-// イベント発火時に影響しない要素はfunctionの外に出すべき？
+// イベント発火時に影響しない要素はfunctionの外に出すべき？それとも、関数内に収めるべき？

@@ -550,7 +550,8 @@ header {
   margin-left: 3rem;
   position: relative;
 }
-.sec-main-copy, .sec-sub-copy {
+.sec-main-copy, 
+.sec-sub-copy {
   width: 100%;
   height: auto;
 }
@@ -561,10 +562,6 @@ header {
 }
 .sec-main-copy img {
   width: 80%;
-  height: 20%;
-}
-.sec-main-copy-menu img {
-  width: 180%;
   height: 20%;
 }
 .sec-sub-copy {
@@ -663,11 +660,6 @@ header {
   position: relative;
   margin: 2rem 7rem 0 0;
 }
-/* set the enlarge animation */
-/* .show-detail a:hover {
-  transition: 0.3s;
-  transform: scale(1.3); 
-} */
 .show-button {
   background-image: url("../img/bg03.png");
   width: 4.5rem;
@@ -718,8 +710,10 @@ header {
     width: 100%;
     height: auto;
   }
-  .sec-main-copy-menu {
-    display: none;
+  .sec-content-gallery-left img {
+    width: auto;
+    position: absolute;
+    left: 0;
   }
   .sec-sub-copy-ja {
     width: 6%;
@@ -865,7 +859,6 @@ header {
   }
 }
 @media screen and (max-width: 480px) {
-  /* 480pxまでの幅の場合に適応される */
   .sec-sub-copy-left-en {
     left: -1.5rem;
     top: 4rem;
@@ -916,12 +909,16 @@ header {
   background-size: 15rem 15rem;
   border-radius: 2rem;
 }
+.sec-main-copy-menu img {
+  width: 180%;
+  height: 20%;
+}
 .text-box {
   height: 65%;
   position: absolute;
   left: 0;
 }
-.text-vertical {
+.text-direction {
   writing-mode: vertical-rl;
   text-orientation: upright;
 }
@@ -1017,6 +1014,106 @@ article {
   .sec-right-menu {
     margin: 50rem 0 5rem 0;
   }
+  /* .sec-right-menu::after {
+    content: '';
+    width: 100px;
+    height: auto;
+    background-image: url('../img/bg04.png');
+    background-size: 15rem 15rem;
+    border-radius: 2rem;
+  } */
+  .sec-main-copy-menu {
+    text-align: end;
+  }
+  .sec-main-copy-menu img {
+    width: 60%;
+    height: auto;
+  }
+  .text-box {
+    width: 70%;
+    height: auto;
+    bottom: 10rem;
+    right: 8rem;
+    left: auto;
+  }
+  .text-direction {
+    writing-mode: horizontal-tb;
+  }
+  .show-text-menu {
+    left: 8%;
+  }
+  .sec-sub-copy-menu-ja {
+    /* width: 10%;
+    height: auto;
+    position: absolute; */
+    top: -16rem;
+    left: -5rem
+  }
+  .sec-sub-copy-menu-en {
+    width: 3%;
+    height: auto;
+    position: absolute;
+    top: -16rem;
+    left: 3rem
+  }
+  
+  .swiper {
+    width: 100%;
+    height: auto;
+    padding: 30% 0 0 8%;
+    margin: 0 calc(50% - 50vw);
+    display: flex;
+    z-index: 1;
+  }
+  /*
+  .swiper-slide {
+    width: 30rem !important;
+    margin-right: 3rem;
+  }*/
+  .swiper-nav {
+    display: none;
+  }
+  /*
+  article {
+    width: 100%;
+    height: auto;
+    padding: 0 1rem;
+    position: relative;
+  }
+  .slider-img {
+    width: 100%;
+    height: auto;
+    border-radius: 1.5rem;
+  }
+  .slider-category {
+    width: 25%;
+    height: auto;
+    margin: 0 auto;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3rem;
+    position: absolute;
+    top: 59%;
+    left: 38%;
+  }
+  .slider-category img {
+    padding: 1rem 0;
+    width: 50%;
+    height: auto;
+  }
+  .slider-title {
+    margin: 4rem 0 2rem 0;
+    font-weight: 500;
+    text-align: center;
+  }
+  .slider-body {
+    padding: 0 2rem;
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+    letter-spacing: 0.1rem;
+  } */
 }
 /* --- Start SNS --- */
 .sec-cover {
@@ -1179,6 +1276,11 @@ article {
   margin: auto;
   transform: scale(.6);
 }
+@media screen and (max-width: 1024px) {
+  .sec-right-menu {
+    margin: 50rem 0 5rem 0;
+  }
+}
 /* --- Start access info ---  */
 .sec-center {
   margin: 7rem 0;
@@ -1243,6 +1345,23 @@ article {
   font-weight: lighter;
   width: 42%;
   line-height: 200%;
+}
+@media screen and (max-width: 1024px) {
+  .sec-sub-copy-cover-ja {
+    width: 20%;
+    height: auto;
+    position: absolute;
+    top: 6rem;
+  }
+  .sec-content-cover {
+    width: auto;
+    height: auto;
+    padding: 0;
+    background-image: url('../img/bg01.png');
+    position: absolute;
+    bottom: -1rem;
+    border-radius: 0 1.5rem 0 0;
+  }
 }
 @media screen and (max-width: 767px) {
   .access-info,
